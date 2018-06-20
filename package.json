@@ -1,16 +1,25 @@
 {
-  "name": "webpack-test",
+  "name": "webpack-cfg",
   "version": "1.0.0",
-  "description": "test webpack",
-  "main": "index.js",
+  "description": "kodilla-task-16.3",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "start": "npm run test:js && npm run start:webpack",
+    "start:webpack": "webpack",
+    "test:js": "node_modules/.bin/jshint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CiesielskiK/webpack-cfg.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CiesielskiK/webpack-cfg/issues"
+  },
+  "homepage": "https://github.com/CiesielskiK/webpack-cfg#readme",
   "devDependencies": {
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.4"
+    "jshint": "^2.9.5",
+    "webpack": "^3.10.0"
   }
 }
